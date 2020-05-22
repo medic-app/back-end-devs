@@ -1,6 +1,0 @@
-First_Name = input('First Name: ')
-Last_Name = input('Last_Name: ')
-Email = input('Email: ')
-Phone = input('Phone: ')
-Password = input('Password: ')
-comfirm_password = input('Comfirm_password: ')
