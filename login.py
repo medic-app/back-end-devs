@@ -1,10 +1,17 @@
-import re
+import random
+import string
 
-first_Name = input('first_name: ')
+letters = string.ascii_lowercase
+# Create an empty dictionary
+Sign_up_Data = {}
 
-if len(first_Name) < 4:
+while True:
+
+    first_name = input('first_name: ')
+
+if len(first_name) < 4:
     print('Name must be at least 3 charaters')
-elif len(first_Name) > 20:
+elif len(first_name) > 20:
     print('Name must be a maxmium of 15 characters 😙')
 else:
     print('Name looks good 🙂')
@@ -21,7 +28,7 @@ else:
 
 phone = input('phone: ')
 
-if len(phone) < 6:
+if len(phone) < 4:
     print("Phone Number must be at least 6 in length")
 elif len(phone) > 11:
     print('Phone number must not be longer than 11.')
@@ -38,16 +45,26 @@ else:
         print('Good characters 🙂')
 
 
-def check_email():
-    import re
+password = input('Password: ')
 
-    regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+if len(password) < 8:
+    print('Password too short 👎')
+elif len(password[2:]) > 10:
+    print('Password too long')
+else:
+    print('Strong password 💪')
 
-    if re.search(regex, check_email):
-        check_email()
-    else:
-        print("Invalid Email")
+
+# def check_email():
+   # import re
+
+   # regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+
+   # if re.search(regex, check_email):
+    # check_email()
+   # else:
+    #print("Invalid Email")
 
 
-Email = input("Enter your Email Address: ")
-check_email()
+#Email = input("Enter your Email Address: ")
+# check_email()
