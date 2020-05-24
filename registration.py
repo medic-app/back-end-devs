@@ -12,6 +12,19 @@ def check_email():
     else:
         print("Invalid Email")
 
+
+def Check_error():
+    if len(FirstName) < 5:
+        exit("Error, Name must be more than 5 characters")
+    if len(LastName) < 5:
+        exit("Last Name must be more than 5 characters")
+    if len(password) < 6:
+        exit("Password must be more than 6 characters")
+
+
+
+
+
 def validate():
     if len(FirstName) < 5:
         print("Name must be 5 characters")
@@ -33,7 +46,7 @@ def Add_user():
 
     with open('users.txt', 'w') as f:
         f.write(str(user_info))
-        print(f"Welcome: {FirstName}")
+        print(f"Welcome: {FirstName} Registration Success!")
 
 
 print("Input the following details to Register")
@@ -41,6 +54,9 @@ FirstName = input("Enter your First Name: ")
 LastName = input("Enter your Last Name: ")
 Email = input("Enter your Email Address: ")
 password = input("Enter your password: ")
+
+#This will check errors
+Check_error()
 
 #Check Email and add user
 check_email()
