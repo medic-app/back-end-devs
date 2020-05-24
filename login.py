@@ -28,6 +28,15 @@ elif len(phone) > 11:
 else:
     print('Good valid Number! 🙂')
 
+    Address = input('Enter Address: ')
+
+    if len(Address) < 10:
+        print('Please too short characters 😫')
+    elif len(Address) < 25:
+        print('Too long Characters')
+    else:
+        print('Good characters 🙂')
+
 
 def check_email():
     import re
