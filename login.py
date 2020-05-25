@@ -55,6 +55,7 @@ else:
     print('Strong password 💪')
 
 Gerder = input('Gerder: ')
+phone = input('phone: ')
 
 # def check_email():
 # import re
