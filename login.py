@@ -54,16 +54,17 @@ elif len(password[2:]) > 10:
 else:
     print('Strong password 💪')
 
+Gerder = input('Gerder: ')
 
 # def check_email():
-   # import re
+# import re
 
-   # regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+# regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 
-   # if re.search(regex, check_email):
-    # check_email()
-   # else:
-    #print("Invalid Email")
+# if re.search(regex, check_email):
+# check_email()
+# else:
+#print("Invalid Email")
 
 
 #Email = input("Enter your Email Address: ")
