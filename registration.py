@@ -4,13 +4,15 @@ import re
 
 def check_email():
     import re
-
+    Email = input("Enter your Email Address: ")
     regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 
     if re.search(regex, Email):
         validate()
     else:
-        print("Invalid Email")
+        print("Invalid Email\n")
+        check_email()
+    return Email
 
 
 def Check_error():
@@ -44,15 +46,15 @@ def Add_user():
             'password': password
         }
 
-    with open('users.txt', 'w') as f:
+    with open('users.txt', 'a') as f:
         f.write(str(user_info))
-        print(f"Welcome: {FirstName} Registration Success!")
+        print(f"Welcome {FirstName} Registration Success!")
 
 
 print("Input the following details to Register")
 FirstName = input("Enter your First Name: ")
 LastName = input("Enter your Last Name: ")
-Email = input("Enter your Email Address: ")
+Email = ""
 password = input("Enter your password: ")
 
 #This will check errors
